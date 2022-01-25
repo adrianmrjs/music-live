@@ -5,12 +5,12 @@ const songList = [
         cover:"catsad-1.jpg"
     },
     {
-        title: "sagun - I'll Keep You Safe (feat. Shiloh)",
+        title: "sagun - I'll Keep You Safe",
         file:"sagun - I'll Keep You Safe (feat. Shiloh).mp3",
         cover:"catsad-2.jpg"
     },
     {
-        title: "timmies - tell me why i'm waiting (ft. shiloh)",
+        title: "timmies - tell me why i'm waiting",
         file:"timmies - tell me why i'm waiting (ft. shiloh).mp3",
         cover:"catsad-3.jpg"
     },
@@ -20,6 +20,7 @@ const songList = [
 const songs = document.getElementById("songs")
 const audio = document.getElementById("audio")
 const cover = document.getElementById("cover")
+const title = document.getElementById("title")
 //Cargar canciones y mostrar listado
 function loadSongs() {
     songList.forEach((song, index) => {
@@ -43,9 +44,18 @@ function loadSongs() {
 function loadSong(songIndex) {
     audio.src = "src/audio/" + songList[songIndex].file
     audio.play()
+    changeCover(songIndex)
+    changeSongTitle(songIndex)
+}
 
+// Cambiar el cover de la cancion
+function changeCover(songIndex){
     cover.src = "src/images/" + songList[songIndex].cover
 }
 
-//Go!
+// Cambiar titutlo de la cancion
+function changeSongTitle(songIndex){
+    title.innerText = songList[songIndex].title
+}
+
 loadSongs()
