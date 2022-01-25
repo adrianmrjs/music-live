@@ -1,3 +1,70 @@
+/* Common */
+* {
+  box-sizing: border-box;
+}
 
+body {
+  font-family: sans-serif;
+  background-color: lightcyan;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .player {
+  margin: 2rem;
+  max-width: 568px;
+  min-height: 320px;
+  background-image: linear-gradient(gray, black);
+  border-radius: 1rem;
+  padding: 2rem;
+  color: white;
+  box-shadow: 2px 2px 2px black;
+}
+body .title {
+  margin-top: 0;
+  text-align: center;
+}
+body .cover {
+  width: 228px;
+  height: auto;
+  border-radius: 1rem;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+body .progress-container {
+  height: 0.6rem;
+  background-color: lightgray;
+  margin-bottom: 1rem;
+}
+body .progress-container .progress {
+  background-color: #ffc669;
+  width: 40%;
+  height: 100%;
+}
+body .controls {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
+}
+body .controls button {
+  background-color: transparent;
+  border: none;
+}
+body .controls button i {
+  font-size: 1.5rem;
+  color: white;
+}
+body .songs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body .songs li {
+  margin: 1.5rem 0;
+}
+body .songs li a {
+  margin-bottom: 1.5rem;
+  text-decoration: none;
+}
 
 /*# sourceMappingURL=style.css.map */
