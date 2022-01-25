@@ -5,13 +5,13 @@
 
 body {
   font-family: sans-serif;
-  background-color: lightcyan;
+  background-color: #222222;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 body .player {
-  margin: 2rem;
+  margin: 1rem;
   max-width: 568px;
   min-height: 320px;
   background-image: linear-gradient(gray, black);
@@ -65,6 +65,11 @@ body .songs li {
 body .songs li a {
   margin-bottom: 1.5rem;
   text-decoration: none;
+  color: lightgray;
+}
+body .songs li .active {
+  color: lightpink;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */

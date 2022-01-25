@@ -5,12 +5,12 @@
 
 body {
   font-family: sans-serif;
-  background-color: lightcyan;
+  background-color: rgb(34, 34, 34);
   display: flex;
   justify-content: center;
   align-items: center;
   .player {
-    margin: 2rem;
+    margin: 1rem;
     max-width: 568px;
     min-height: 320px;
     background-image: linear-gradient(gray, black);
@@ -62,6 +62,11 @@ body {
       a {
         margin-bottom: 1.5rem;
         text-decoration: none;
+        color: lightgray;
+      }
+      .active {
+        color: lightpink;
+        font-weight: bold;
       }
     }
   }
